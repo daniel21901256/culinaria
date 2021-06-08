@@ -102,26 +102,26 @@
         <section>
           <h4 class="block-title" style="text-align: center;margin-top: 30px;">
             <span style="background-color: rgb(248, 209, 103); padding: 3px;">Fonte das Imagens</span></h4>
-          <a href="https://www.saborintenso.com/"><img width="200" height="250" href="{% static "website/images/sabor.jpg" %}" alt="sabor"></a>
+          <a href="https://www.saborintenso.com/"><img width="200" height="250" src="{% static "website/images/sabor.jpg" %}" alt="sabor"></a>
           <br>
         </section>
         <br>
         <h4 class="block-title" style="text-align: center;"><span style="background-color: rgb(248, 209, 103); padding: 3px;">Wordcloud</span></h4>
         <svg width="300" height="225">
           <image href="{% static "website/images/wordcloud.jpg" %}"></image>
-          <a href="veggie.html">
+          <a href="{% url 'website:veggie' %}">
             <polygon opacity="0" points="120,29 120,50 183,50 183,29"></polygon>
           </a>
-          <a href="index.html">
+          <a href="{% url 'website:index' %}">
             <polygon opacity="0" points="69,63 69,90 236,90 236,63"></polygon>
           </a>
-          <a href="doces.html">
+          <a href="{% url 'website:doces' %}">
             <polygon opacity="0" points="197,98 197,110 247,110 247,98"></polygon>
           </a>
-          <a href="carnes.html">
+          <a href="{% url 'website:carnes' %}">
             <polygon opacity="0" points="86,113 86,136 214,136 214,113"></polygon>
           </a>
-          <a href="peixe.html">
+          <a href="{% url 'website:peixe' %}">
             <polygon opacity="0" points="91,143 91,176 210,176 210,143"></polygon>
           </a>
         </svg>
