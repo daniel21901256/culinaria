@@ -33,7 +33,7 @@ class quizz(models.Model):
 
 
 class Post(models.Model):
-    avaliacao = models.CharField(max_length=10, unique=True)
+    avaliacao = models.CharField(max_length=10)
 
     def __str__(self):
         return f"{self.avaliacao}"
