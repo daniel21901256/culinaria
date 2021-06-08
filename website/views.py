@@ -52,8 +52,8 @@ def opiniao_page_view(request):
     plt.close()
 
 
-    if request.method == 'POST' is not None:
-        if request.POST.get('avaliacao', "0") is not None:
+    if request.method == 'POST':
+        if request.POST.get('avaliacao', "0"):
             post = Post()
             post.avaliacao = request.POST.get('avaliacao', "0")
             post.save()
