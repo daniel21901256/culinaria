@@ -47,7 +47,7 @@ def opiniao_page_view(request):
 
     funcao_post()
     context = {
-        'imagem': plt
+        'imagem2': plt
     }
     plt.close()
 
@@ -59,7 +59,7 @@ def opiniao_page_view(request):
             post.save()
             funcao_post()
             context = {
-                'imagem': plt
+                'imagem2': plt
             }
             plt.close()
 
