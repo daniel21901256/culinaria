@@ -39,13 +39,14 @@
               <a href="{% url 'website:carnes' %}" {% if request.resolver_match.url_name == 'carnes' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>Pratos de Carne</a>
               <a href="{% url 'website:peixe' %}" {% if request.resolver_match.url_name == 'peixe' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>Pratos de peixe</a>
               <a href="{% url 'website:doces' %}" {% if request.resolver_match.url_name == 'doces' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>Doces e sobremesas</a>
+            <a href="{% url 'website:receitaDia' %}" {% if request.resolver_match.url_name == 'receitaDia' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>Receita do Dia</a>
             </div>
           </div>
           <b>
             <a href="{% url 'website:videos' %}" {% if request.resolver_match.url_name == 'videos' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>VIDEOS</a>
             <a href="{% url 'website:veggie' %}" {% if request.resolver_match.url_name == 'veggie' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>VEGGIE</a>
             <a href="{% url 'website:quemSomos' %}" {% if request.resolver_match.url_name == 'quemSomos' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>QUEM SOMOS</a>
-            <a href="{% url 'website:quizz' %}" {% if request.resolver_match.url_name == 'quizz' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>QUIZZ</a>
+            <a href="{% url 'website:quizz' %}" {% if request.resolver_match.url_name == 'quizz' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>QUIZ</a>
           </b>
           <div class="dropdown">
             <b><a class="dropbtn" href="#home" {% if request.resolver_match.url_name == 'receitaNova' or request.resolver_match.url_name == 'opiniao' or request.resolver_match.url_name == 'contactos' %}style="border-bottom: 5px solid rgb(248, 209, 103)"{% endif %}>COMUNIDADE <i class="fa fa-chevron-down"

@@ -1,5 +1,7 @@
+import random
+
 from django.contrib.auth import authenticate, login, logout
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse, Http404
 from django.shortcuts import render
 from django.urls import reverse
 from matplotlib import pyplot as plt
@@ -258,3 +260,14 @@ def logout_view(request):
     logout(request)
     return render(request, 'website/index.html', {
         'message': 'Insira os Seus Dados'})
+
+def receitaDia_page_view(request):
+    return render(request, 'website/ReceitaDoDia.html')
+
+texts = ["website/carnesDia.html","website/doceDia.html","website/peixeDia.html"]
+
+def section(request, num):
+    if num == 1:
+        return HttpResponse(render(request, random.choice(texts)))
+    else:
+        raise Http404("No such section")

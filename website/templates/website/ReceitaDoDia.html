@@ -1,0 +1,24 @@
+{% extends "website/base.html" %}
+{% block main %}
+    {% load static %}
+    <script src="{% static "website/js/script.js" %}"></script>
+    <h2 style="text-align: left;margin-left: 10px; border-bottom: 5px solid rgb(248, 209, 103);">RECEITA DO DIA</h2>
+    <div id="titulo">
+        <p style="font-size: 20px">&#128270 Para Receber a sua Receita do Dia Encontre o Wally &#128270</p>
+        <hr>
+    </div>
+    <svg width="100%" height="500px">
+        <image href="{% static "website/images/wally.png" %}"></image>
+      <a id="wally" data-section="1">
+        <polygon opacity="0" points="357,240 357,264 370,264 370,240"><div id="content"></div></polygon>
+      </a>
+    </svg>
+    <section id="logo">
+        <hr>
+        <h2 style="text-align: left;margin-left: 10px; border-bottom: 5px solid rgb(248, 209, 103);">Diretório de Projetos</h2>
+        <br>
+        <img style="border: 5px solid black;" src="{% static "website/images/icon2.png" %}">
+        <p style="font-size: 20px"><b>Descrição: </b>Website de receitas deliciosas e práticas</p>
+    </section>
+
+{% endblock main %}

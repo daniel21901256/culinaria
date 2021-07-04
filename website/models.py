@@ -27,7 +27,7 @@ class quizz(models.Model):
     pergunta_10 = models.CharField(max_length=2)
 
     def __str__(self):
-        return f"{self.pergunta_1},{self.pergunta_2},{self.pergunta_4}" \
+        return f"{self.pergunta_1},{self.pergunta_2},{self.pergunta_3},{self.pergunta_4}" \
                f",{self.pergunta_5},{self.pergunta_6},{self.pergunta_7},{self.pergunta_8}" \
                f",{self.pergunta_9},{self.pergunta_10}"
 

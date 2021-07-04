@@ -25,4 +25,6 @@ urlpatterns = [
     path('quizz_resultados/<int:id>',views.quizz_resultados,name="quizz_resultados"),
     path('edita/<int:contacto_id>', views.edita_contactos_view, name='edita'),
     path('apaga/<int:contacto_id>', views.apaga_contactos_view, name='apaga'),
+    path('receitaDia', views.receitaDia_page_view, name='receitaDia'),
+    path("sections/<int:num>", views.section, name="section")
 ]
